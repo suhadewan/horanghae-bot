@@ -1,1 +1,1 @@
-# horanghae-bot
+# horangi discord bot
