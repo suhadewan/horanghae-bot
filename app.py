@@ -2,6 +2,7 @@ from ast import alias
 from nextcord import Intents
 from nextcord.ext import commands
 import requests, json, random
+import os
 
 links = json.load(open("gifs.json"))
  
@@ -22,5 +23,5 @@ async def on_ready():
     print(f"Logged in as: {bot.user.name}")
     
 if __name__ == '__main__':
-    bot.run("MTAwNDc4MjA1MDc3NzIzNTU3Ng.G9y5a4.zgQ_UnGRmdvYtHQ1wBEsV6y0gzKJ9sI1QidDqg")
+    bot.run(os.environ["DISCORD_TOKEN"])
     
